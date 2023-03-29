@@ -36,6 +36,8 @@ This project is licensed under MIT:
 
 Open the terminal and run node index.js in order to use this app.
 
+Link to Walkthrough Video: https://drive.google.com/file/d/1MGgjGEqZoINvlHYzQCOVdFJDndSdolDB/view
+
 ## [Questions](#table-of-contents)
 
 Contact Me:
@@ -43,3 +45,5 @@ Contact Me:
 GitHub: (https://github.com/Ani-Kandikattu)
 
 Email: anikandikattu@gmail.com
+
+Link to this repository: https://github.com/Ani-Kandikattu/readme-generator
