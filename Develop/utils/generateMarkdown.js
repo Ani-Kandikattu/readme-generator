@@ -50,31 +50,29 @@ function generateMarkdown(data) {
   - [Tests](#tests)
   - [Questions](#questions)
 
-  ##[Description]
+  ##[Description](#table-of-contents)
 
   ${data.description}
 
-  ##[Installation]
+  ##[Installation](#table-of-contents)
 
   ${data.install}
 
-  ##[Usage]
+  ##[Usage](#table-of-contents)
 
   ${data.usage}
 
-  ##[Credits]
+  ##[Credits](#table-of-contents)
 
   ${data.contribution}
 
-  ##[License]
-
   ${renderLicenseSection(data.license)}
 
-  ##[Tests]
+  ##[Tests](#table-of-contents)
 
   ${data.test}
 
-  ##[Questions]
+  ##[Questions](#table-of-contents)
 
   Contact Me:
 
