@@ -5,7 +5,7 @@ function renderLicenseBadge(license) {
   if (!license) {
     return "";
   } else {
-    licenseBadge = `![License Badge](https://img.shields.io/badge/license-${license}-brightgreen)`;
+    licenseBadge = `![Badge](https://img.shields.io/badge/license-${license}-brightgreen)`;
     return licenseBadge;
   }
 }
@@ -50,33 +50,33 @@ function generateMarkdown(data) {
   - [Tests](#tests)
   - [Questions](#questions)
 
-  ##[Description](#table-of-contents)
+  ## [Description](#table-of-contents)
 
   ${data.description}
 
-  ##[Installation](#table-of-contents)
+  ## [Installation](#table-of-contents)
 
   ${data.install}
 
-  ##[Usage](#table-of-contents)
+  ## [Usage](#table-of-contents)
 
   ${data.usage}
 
-  ##[Credits](#table-of-contents)
+  ## [Credits](#table-of-contents)
 
   ${data.contribution}
 
   ${renderLicenseSection(data.license)}
 
-  ##[Tests](#table-of-contents)
+  ## [Tests](#table-of-contents)
 
   ${data.test}
 
-  ##[Questions](#table-of-contents)
+  ## [Questions](#table-of-contents)
 
   Contact Me:
 
-  GitHub: ${data.name}
+  GitHub: (https://github.com/${data.name})
 
   Email: ${data.email}
 
