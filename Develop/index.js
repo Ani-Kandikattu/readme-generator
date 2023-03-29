@@ -17,10 +17,10 @@ const questions = [
       "Provide a description for your project including why you created this project.",
   },
   {
-    type: "checkbox",
+    type: "list",
     name: "license",
     message: "Please select a license for this project.",
-    choices: ["MIT", "Apache2.0", "ISC", "N/A"],
+    choices: ["mit", "apache", "agpl", "N/A"],
   },
   {
     type: "input",
