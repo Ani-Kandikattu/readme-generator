@@ -18,7 +18,7 @@ const questions = [{
   type: "checkbox",
   name: "license",
   message: "Please select a license for this project.",
-  choices: ["MIT", "Apache 2.0", "Mozilla Public", "Eclipse Public ", "BSD 2", "BSD 3", "N/A"],
+  choices: ["MIT", "Apache2.0", "ISC", "N/A"],
 },
 {
   type: "input",
@@ -53,10 +53,21 @@ const questions = [{
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+  fs.writeFile(fileName, data, (err) => {
+    err ? console.log(err) : console.log("Success!")
+  })
+}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+  inquirer.createPromptModule(questions)
+  .then((answers) => {
+    const markdown = generateMarkdown(answers);
+    writeToFile('generated-README.md', markdown);
+    console.log("Successfully created README.md");
+  })
+}
 
 // Function call to initialize app
 init();
